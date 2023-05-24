@@ -1,0 +1,241 @@
+:root{
+    --btn-red: #ff4d4d;
+    --btn-redHover: #db3f3f;
+    --btn-green: #3cb652;
+    --btn-greenHover: #22692f;
+    --btn-gray: #2d2e32;
+    --btn-grayHover: #1a1b1d;
+    --link-color: #a2a2a4;
+    --text-color: #fff;
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url("https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png");
+    background-color: #16171b;
+}
+
+/* navbar */
+.navbar{
+    background: #1b1b1f;
+    font-family: 'Ubuntu', sans-serif;
+    position: sticky;
+    top: 0;/* this is for staying navbar on top when scrolling */
+}
+.navbar .head{
+    margin-left: 0.4rem;
+}
+.navbar-toggler{
+    margin-right: 0.4rem;
+}
+.navbar .head a{
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--text-color);
+    letter-spacing: -0.5px;
+    font-size: 26px;
+    font-weight: 50;
+}
+.navbar .head a img{
+    width: 32px;
+    height: 32px;
+    margin-bottom: 0.1rem;
+}
+.container-fluid {
+    margin: -0.2rem 0;
+}
+.line{
+    width: 100%;
+    margin: 0.5rem 0 0 0 ;
+    border: 0.01px solid #6f6f74;
+}
+.navbar-collapse{
+    margin: 0.8rem 0.5rem 0 0.5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.navbar-nav{
+    line-height: 32px;
+}
+.navbar-nav .nav-link{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--link-color);
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+.navbar-nav .nav-link::after{
+    content: '';
+    background: var(--link-color);
+    width: 0;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.4s ease-in-out;
+}
+.navbar-nav .nav-link:hover::after{
+    width: 100%;
+}
+.navbar-nav .nav-link:hover{
+    color: var(--text-color);
+    transform: scale(1.01);
+}
+  #checkbox {
+      display: none;
+  }
+
+  .toggle {
+      position: relative;
+      margin-top: 0.6rem;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      transition-duration: .3s;
+  }
+
+  .bars {
+      width: 100%;
+      height: 3px;
+      background-color: var(--btn-red);
+      border-radius: 3px;
+      transition-duration: .3s;
+  }
+
+  #checkbox:checked+.toggle .bars {
+      margin-left: 5px;
+  }
+
+  #checkbox:checked+.toggle #bar2 {
+      transform: rotate(135deg);
+      margin-left: -0.1px;
+      transform-origin: center;
+      transition-duration: .3s;
+  }
+
+  #checkbox:checked+.toggle #bar1 {
+      transform: rotate(45deg);
+      transition-duration: .3s;
+      transform-origin: left center;
+  }
+
+  #checkbox:checked+.toggle #bar3 {
+      transform: rotate(-45deg);
+      transition-duration: .3s;
+      transform-origin: left center;
+  }
+.d-grid .btn{
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 38px;
+    letter-spacing: 1px;
+    font-weight: 580;
+    color: var(--text-color);
+    background: #1b1b1f;
+    border-radius: 3px;
+    transition: color 0.3s ease-in-out;
+}
+.d-grid .btn:hover {
+    color: #969696;
+}
+.d-grid .btn-white{
+    margin-top: 0.9rem;
+    border: 0.1px solid var(--text-color);
+}
+.d-grid .btn-red {
+    margin-top: 0.2rem;
+    border: 0.1px solid var(--btn-red);
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    .navbar .head {
+        margin: 0 0 0 1.4rem;
+    }
+    .navbar-toggler {
+        margin: 0 1.4rem 0 0;
+    }
+    .navbar-collapse {
+        margin: 0.8rem 1.5rem 0 1.5rem;
+    }
+    .navbar .head a img {
+        width: 44px;
+        height: 44px;
+        margin-bottom: 0.1rem;
+    }
+    .navbar .head a {
+        font-size: 34.5px;
+    }
+    .toggle{
+        width: 25px;
+        height: 30px;
+    }
+    #checkbox:checked+.toggle .bars {
+        margin-left: 4px;
+    }
+    #checkbox:checked+.toggle #bar2 {
+        transform: rotate(135deg);
+        margin-left: -0.1px;
+        transform-origin: center;
+        transition-duration: .3s;
+    }
+}
+@media screen and (min-width:991px) {
+    .navbar {
+        background: #151518;
+    }
+    .navbar .head{
+        margin: 0 0 0 1.6rem;
+    }
+    .navbar .head a{
+        font-size: 34.5px;
+    }
+    .navbar .head a img{
+        width: 45px;
+        height: 45px;
+    }
+    .navbar-collapse{
+        margin-top: 0;
+        margin-right: 1.7rem;
+        padding-bottom: 0.1rem;
+        flex: 1;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-nav{
+        margin: 0;
+    }
+    .navbar-nav .nav-link{
+        margin-right: 1.35rem;
+        margin-top: 0.3rem;
+        font-size: 14.5px;
+        letter-spacing: 1.5px;
+        font-weight: 600;
+    }
+    .line{
+        display: none;
+    }
+    .d-grid p{
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    .d-grid .btn-white{
+        width: 105px;
+        height: 34px;
+        margin-bottom: 0.6rem;
+    }
+    .d-grid .btn-red{
+        margin-top: 0.86rem;
+        width: 70px;
+        height: 34px;
+    }
+}
+/* navbar */
