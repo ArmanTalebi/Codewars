@@ -1,12 +1,13 @@
 :root{
     --btn-red: #ff4d4d;
-    --btn-redHover: #db3f3f;
+    --btn-redHover: #c93939;
     --btn-green: #3cb652;
     --btn-greenHover: #22692f;
     --btn-gray: #2d2e32;
     --btn-grayHover: #1a1b1d;
     --link-color: #a2a2a4;
     --text-color: #fff;
+    --text-btn: #333333;
 }
 *,
 *::before,
@@ -239,3 +240,133 @@ body{
     }
 }
 /* navbar */
+
+
+/* header */
+.header{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    background: rgba(0, 0, 0, 0.65);
+    /* background-image: linear-gradient(20deg, blue, red); */
+    min-width: 50vh;
+    min-height: 91.2vh;
+    position: relative;
+    overflow: hidden;
+}
+.video-bg{
+    top: 0;
+    left: 0;
+    z-index: -1;
+    min-width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.header .content{
+    margin: 8rem 1rem 0 1rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.header .content p:nth-child(1){
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+    background-image: linear-gradient(to right, #fa9191, #ff3737);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    /* filter: brightness(80%); */
+}
+.header .content p:nth-child(2){
+    margin: 0;
+    font-size: 2.9rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.header .content p:nth-child(3){
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 16.5px;
+    margin-top: 0.4rem;
+    color: #e0e0e0;
+}
+.content .btn{
+    width: 185px;
+    height: 55px;
+    background: var(--btn-red);
+    color: var(--text-btn);
+    border-radius: 4px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+.content .btn:hover{
+    background: var(--btn-redHover);
+    color: var(--text-btn);
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    .header .content {
+        margin: 4rem 1.5rem 0 1.5rem;
+    }
+    .header .content p:nth-child(1) {
+        font-size: 3.5rem;
+    }
+    .header .content p:nth-child(2) {
+        font-size: 3.5rem;
+    }
+    .header .content p:nth-child(3) {
+        font-size: 1.55rem;
+        font-weight: 200;
+        color: #e0e0e0;
+    }
+}
+@media screen and (min-width:991px) {
+    .header{
+        min-height: 114vh;
+    }
+    .header .content {
+        margin: 1rem 5rem 0 5rem;
+    }
+    .header .content p:nth-child(1){
+        font-size: 5.5rem;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid var(--btn-redHover);
+        animation: cursor 1s step-start infinite, text 2s steps(14) alternate infinite;
+    }
+        @keyframes cursor {
+    
+            0%,
+            100% {
+                border-color: var(--btn-redHover);
+            }
+        }
+    
+        @keyframes text {
+            0% {
+                width: 0;
+            }
+    
+            100% {
+                width: 67%;
+            }
+        }
+    .header .content p:nth-child(2){
+        font-size: 5.5rem;
+        margin-bottom: 0;
+    }
+    .header .content p:nth-child(3) {
+        margin-top: 0;
+        font-size: 1.7rem;
+        font-weight: 100;
+        color: #e0e0e0;
+        font-family: IBM Plex Sans, sans-serif;
+    }
+        
+    
+
+    .content .btn {
+        margin-top: 1rem;
+    }
+}
+/* header */
