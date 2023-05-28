@@ -48,8 +48,8 @@ body{
     font-weight: 50;
 }
 .navbar .head a img{
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     margin-bottom: 0.1rem;
 }
 .container-fluid {
@@ -1131,6 +1131,8 @@ body{
 .card15 .card {
     width: 100%;
     height: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
     border: none;
     font-family: IBM Plex Sans, sans-serif;
     background-image: linear-gradient(to right, #1c3a27, #125a28), url("https://uploads-ssl.webflow.com/62e3ee10882dc50bcae8d07a/631a5d4631d4c55a475f3e34_noise-50.png");
@@ -1138,7 +1140,7 @@ body{
     color: var(--text-color);
 }
 .card15 .card-body {
-    margin: 0rem 2.5rem 1rem 2.5rem;
+    margin: 0rem 2.5rem 0rem 2.5rem;
 }
 .card15 .card-title{
     font-size: 20px;
@@ -1169,4 +1171,118 @@ body{
 .card15 .butn:hover{
     background: var(--btn-greenHover);
 }
+
 /* content */
+
+
+
+/* Footer */
+.footer{
+    font-family: IBM Plex Sans, sans-serif;
+}
+.footer .gray {
+    margin-top: 2rem;
+    background: var(--link-color);
+    border: 1px solid var(--link-color);
+}
+.footer .contain{
+    margin: 1rem 1.5rem 0 1.5rem;
+}
+.contain .logo{
+    cursor: pointer;
+}
+.contain .logo img{
+    position: relative;
+    left: -17px;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.logo .logo-text p{
+    color: var(--text-color);
+    position: relative;
+    top: 1.6rem;
+    left: -0.8rem;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.contain .links{
+    margin-top: 5rem;
+    color: var(--text-color);
+}
+.contain .link-head{
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.contain .links span{
+    width: fit-content;
+    padding: 0px 8px;
+    background: #2d2e32;
+    border-radius: 12px;
+    font-size: 14px;
+    margin-right: 0.2rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.contain .links span:hover{
+    background: var(--btn-red);
+}
+.contain .title {
+    margin-top: 2rem;
+}
+.contain .title-head{
+    margin-top: 0.5rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.contain .title p{
+    font-size: 15px;
+    margin-top: 1rem;
+    color: #858692;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.contain .title p:hover{
+    color: var(--text-color);
+}
+.footer-social{
+    margin-top: 2rem;
+}
+.footer-social a {
+    color: #858692;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: 0.4s;
+}
+.footer-social a:hover{
+    color: var(--text-color);
+}
+
+.footer-social i {
+    font-size: 20px;
+}
+.footer-link{
+    margin-top: 3rem;
+}
+.footer-link .copyright{
+    color: var(--text-color);
+    font-size: 15px;
+}
+.footer-link h6{
+    color: var(--text-color);
+    margin-top: 2rem;
+}
+.footer-link p{
+    color: #858692;
+    font-size: 15px;
+    margin-top: 1rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.footer-link p:hover{
+    color: var(--text-color);
+}
+
+/* Footer */
