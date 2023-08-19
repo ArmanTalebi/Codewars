@@ -1,0 +1,17 @@
+{
+  "name": "codewars",
+  "version": "1.0.0",
+  "description": "CodeWars",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "7435"
+  ],
+  "author": "Arman",
+  "license": "ISC",
+  "dependencies": {
+    "example-package": "^0.0.1"
+  }
+}
